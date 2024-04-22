@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CRM Dashboard Customers</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar">
+        <nav class="navigation">
+            <a class="logo-link link" href="index.html"><span><svg width="37" height="37"><use href="./images/symbol-defs.svg#icon-setting-1"></use></svg></span>Dashboard <span class="version">v.01</span></a>
+            <ul class="list">
+                <li class="nav-list-item">
+                    <a class="icon-link link" href="index.html">
+                        <svg class="svg-item" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-key-square"></use>
+                        </svg>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="icon-link link" href="index.html">
+                        <svg class="svg-item" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-d-square-1"></use>
+                        </svg>
+                        Product
+                        <svg class="svg-chevron" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-chevron-right-2"></use>
+                    </svg>
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="icon-link link" href="index.html">
+                        <svg class="svg-item" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-user-square-1"></use>
+                        </svg>
+                        Customers
+                        <svg class="svg-chevron" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-chevron-right-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="icon-link link" href="index.html">
+                        <svg class="svg-item" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-wallet-money-2"></use>
+                        </svg>
+                        Income
+                        <svg class="svg-chevron" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-chevron-right-2"></use>
+                    </svg>
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="icon-link link" href="index.html">
+                        <svg class="svg-item" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-discount-shape-1"></use>
+                        </svg>
+                        Promote
+                        <svg class="svg-chevron" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-chevron-right-2"></use>
+                    </svg>
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="icon-link link" href="index.html">
+                        <svg class="svg-item" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-message-question-1"></use>
+                        </svg>
+                        Help
+                        <svg class="svg-chevron" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-chevron-right-2"></use>
+                    </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+<div class="manager-profile">
+    <a class="link" href="index.html"><img src="./images/avatar.jpg" alt="avatar" width="42" height="42"></a>
+    <div class="manager-wrapper">
+        <a class="link" href="index.html">
+            <h2 class="manager-name">Evano</h2>
+        </a>
+        <a class="link" href="index.html">
+            <p class="manager-subtitle">Project Manager</p>
+        </a>
+    </div>
+</div>
+    </div>
+    <div class="wrapper">
+    <h1  class="title">Hello Evano 👋🏼,</h1>
+    <div class="content">
+        <div class="content-title-wrapper">
+            <h2 class="content-title">All customers</h2>
+            <form class="search-form" action="/search" method="get">
+                <div class="input-text">
+                    <span class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="../images/symbol-defs.svg#icon-search-1"></use>
+                        </svg>
+                    </span>
+                    <input type="text" class="input-field" placeholder="Search">
+                </div>
+            </form>
+        </div>
+        <a class="link active-link" href="index.html">Active members</a>
+    <table class="table">
+        <tr class="main-row">
+            <td class="table-cells">Customer name</td>
+            <td class="table-cells">Company</td>
+            <td class="table-cells">Phone Number</td>
+            <td class="table-cells">Email</td>
+            <td class="table-cells">Country</td>
+            <td class="table-cells">Status</td>
+        </tr>
+        <tr>
+            <td class="table-cells">Jane Cooper</td>
+            <td class="table-cells">Microsoft</td>
+            <td class="table-cells">(225) 555-0118</td>
+            <td class="table-cells">jane@microsoft.com</td>
+            <td class="table-cells">United States</td>
+            <td class="table-cells"><button class="button active" onclick="changeText(this)">Active</button></td>
+        </tr>
+        <tr>
+            <td class="table-cells">Floyd Miles</td>
+            <td class="table-cells">Yahoo</td>
+            <td class="table-cells">(205) 555-0100</td>
+            <td class="table-cells">floyd@yahoo.com</td>
+            <td class="table-cells">Kiribati</td>
+            <td class="table-cells"><button class="button active" onclick="changeText(this)">Active</button></td>
+        </tr>
+        <tr>
+            <td class="table-cells">Ronald Richards</td>
+            <td class="table-cells">Adobe</td>
+            <td class="table-cells">(302) 555-0107</td>
+            <td class="table-cells">ronald@adobe.com</td>
+            <td class="table-cells">Israel</td>
+            <td class="table-cells"><button class="button active" onclick="changeText(this)">Active</button></td>
+        </tr>
+        <tr>
+            <td class="table-cells">Marvin McKinney</td>
+            <td class="table-cells">Tesla</td>
+            <td class="table-cells">(252) 555-0126</td>
+            <td class="table-cells">mavrin@tesla.com</td>
+            <td class="table-cells">Iran</td>
+            <td class="table-cells"><button class="button active" onclick="changeText(this)">Active</button></td>
+        </tr>
+        <tr>
+            <td class="table-cells">Jerome Bell</td>
+            <td class="table-cells">Google</td>
+            <td class="table-cells">(629) 555-0129</td>
+            <td class="table-cells">jerome@google.com</td>
+            <td class="table-cells">Réunion</td>
+            <td class="table-cells"><button class="button active" onclick="changeText(this)">Active</button></td>
+        </tr>
+        <tr>
+            <td class="table-cells">Kathryn Murphy</td>
+            <td class="table-cells">Microsoft</td>
+            <td class="table-cells">(406) 555-0120</td>
+            <td class="table-cells">kathryn@microsoft.com</td>
+            <td class="table-cells">Curaçao</td>
+            <td class="table-cells"><button class="button active" onclick="changeText(this)">Active</button></td>
+        </tr>
+        <tr>
+            <td class="table-cells">Jacob Jones</td>
+            <td class="table-cells">Yahoo</td>
+            <td class="table-cells">(208) 555-0112</td>
+            <td class="table-cells">jacob@yahoo.com</td>
+            <td class="table-cells">Brazil</td>
+            <td class="table-cells"><button class="button active" onclick="changeText(this)">Active</button></td>
+        </tr>
+        <tr class="last-row">
+            <td class="table-cells">Kristin Watson</td>
+            <td class="table-cells">Facebook</td>
+            <td class="table-cells">(704) 555-0127</td>
+            <td class="table-cells">kristin@facebook.com</td>
+            <td class="table-cells">Åland Islands</td>
+            <td class="table-cells"><button class="button active" onclick="changeText(this)">Active</button></td>
+        </tr>
+    </table>
+        <div class="pagination-wrapper">
+           <p class="subtitle">Showing data 1 to 8 of 256K entries</p>
+               <ul class="pagination list">
+                   <li class="pagination-list-item"><a class="numbers link" href="#">&laquo;</a></li>
+                   <li class="pagination-list-item"><a class="numbers link" href="#">1</a></li>
+                   <li class="pagination-list-item"><a class="numbers link" href="#">2</a></li>
+                   <li class="pagination-list-item"><a class="numbers link" href="#">3</a></li>
+                   <li class="pagination-list-item"><a class="numbers link" href="#">4</a></li>
+                   <li class="pagination-list-item"><a class="numbers link" href="#">...</a></li>
+                   <li class="pagination-list-item"><a class="numbers link" href="#">40</a></li>
+                   <li class="pagination-list-item"><a class="numbers link" href="#">&raquo;</a></li>
+               </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="./js/button.js"></script>
+</body>
+</html>
